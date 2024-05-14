@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-image: url(../imagenes/bosque.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300vh;
+}
+
+h2{
+    color: rgb(141, 248, 53);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-top: 80px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.content-all{
+
+    margin: auto;
+    margin-top: 100px;
+    perspective: 800px;
+    position: relative;
+    width: 210px;
+}
+
+
+.content-carrusel{
+
+    animation: rotar 18s infinite linear;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+}
+
+.content-carrusel:hover{
+
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrusel figure{
+
+    box-shadow: 2px 2px 20px 5px #585C20;
+    height: 100%;
+    position: absolute;
+    transition: all 300ms;
+    /*overflow: hidden;*/
+    width: 100%;
+}
+
+.content-carrusel figure:hover{
+
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+
+.content-carrusel figure:nth-child(1){
+    transform: rotateY(0deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(2){
+    transform: rotateY(40deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(3){
+    transform: rotateY(80deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(4){
+    transform: rotateY(120deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(5){
+    transform: rotateY(160deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(6){
+    transform: rotateY(200deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(7){
+    transform: rotateY(240deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(8){
+    transform: rotateY(280deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(9){
+    transform: rotateY(320deg) 
+    translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(10){
+    transform: rotateY(360deg) 
+    translateZ(300px);
+}
+
+.content-carrusel img{
+
+    transition: all 300ms;
+    width: 100%;
+}
+
+.content-carrusel img:hover{
+
+    transition: all 300ms;
+    transform: scale(1.2);
+}
+
+@keyframes rotar {
+
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+    
+}

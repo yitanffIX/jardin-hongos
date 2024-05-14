@@ -1,0 +1,15 @@
+Para solucionar este problema en GitHub, debes utilizar un modo de autenticación recomendado en lugar de la autenticación por contraseña. A partir del 13 de agosto de 2021, GitHub ha eliminado el soporte para la autenticación por contraseña.
+
+La forma recomendada de autenticación es utilizando tokens de acceso personal (PAT) en lugar de contraseñas. Puedes seguir estos pasos para solucionar el problema:
+
+1. Visita la página de configuración de tu cuenta de GitHub.
+2. En el menú de la izquierda, haz clic en "Developer settings" (Configuraciones de desarrollador).
+3. En el menú de la izquierda, haz clic en "Personal access tokens" (Tokens de acceso personal).
+4. Haz clic en el botón "Generate new token" (Generar nuevo token).
+5. Proporciona una descripción para el token y selecciona los permisos necesarios.
+6. Haz clic en el botón "Generate token" (Generar token).
+7. Copia el token generado y úsalo en lugar de la contraseña al hacer operaciones de clonación, empuje y extracción desde repositorios remotos.
+
+Recuerda que los tokens de acceso personal son sensibles y deben tratarse con cuidado. No los compartas con nadie y asegúrate de almacenarlos de forma segura.
+
+Puedes encontrar más información en la página de GitHub: [Cloning with HTTPS URLs](https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls).
